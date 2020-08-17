@@ -33,30 +33,39 @@ data=pd.read_csv("C:\\Users\\Pavan R Shetty\\Desktop\\Project\\Acute Liver Failu
 ## 2) Data Analysis
 
 ### a) This displays the entire dataset.
+```
 data       
+```
 
 ![](Internship/Data.png)
 ![](Internship/Data1.png)
 
 ### b) This displays the first 5 entries of the dataset.
+```
 data.head()
+```
 
 ![](Internship/head.png)
 ![](Internship/head1.png)
 
 ### c) This displays the last 5 entries of the dataset.
+```
 data.tail()
+```
 
 ![](Internship/tail.png)
 ![](Internship/tail1.png)
 
-### This shows the statistical information about the data
+### d) This shows the statistical information about the data
+```
 data.describe()
+```
 
 ![](Internship/describe.png)
 ![](Internship/describe1.png)
 
-### This gives the count of non empty rows of each column.This means there are some null values in the dataset. There are null values in many columns.
+### e) This gives the count of non empty rows of each column.This means there are some null values in the dataset. There are null values in many columns.
+```
 data.info()
 
 <class 'pandas.core.frame.DataFrame'>
@@ -94,13 +103,52 @@ Chronic Fatigue           8750 non-null float64
 ALF                       6000 non-null float64
 dtypes: float64(21), int64(6), object(3)
 memory usage: 2.0+ MB
+``` 
 
-### This shows if there are missing values in the dataframe.
+### f) This shows if there are missing values in the dataframe.
+```
 data.isnull()
+```
 
 ![](Internship/isull.png)
 ![](Internship/isnull1.png)
 
+### g) This shows if there are any missing values in each column of the dataset. True means there are null values in that column and false means there are no missing values.
+```
+data.isnull().any()
+
+Age                       False
+Gender                    False
+Region                    False
+Weight                     True
+Height                     True
+Body Mass Index            True
+Obesity                    True
+Waist                      True
+Maximum Blood Pressure     True
+Minimum Blood Pressure     True
+Good Cholesterol           True
+Bad Cholesterol            True
+Total Cholesterol          True
+Dyslipidemia              False
+PVD                       False
+Physical Activity          True
+Education                  True
+Unmarried                  True
+Income                     True
+Source of Care            False
+PoorVision                 True
+Alcohol Consumption       False
+HyperTension               True
+Family  HyperTension      False
+Diabetes                   True
+Family Diabetes           False
+Hepatitis                  True
+Family Hepatitis           True
+Chronic Fatigue            True
+ALF                        True
+dtype: bool
+```
 
 
 

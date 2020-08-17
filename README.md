@@ -98,6 +98,9 @@ memory usage: 2.0+ MB
 ### This shows if there are missing values in the dataframe.
 data.isnull()
 
+![](Internship/isull.png)
+![](Internship/isnull1.png)
+
 
 
 

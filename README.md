@@ -25,12 +25,13 @@ from sklearn.metrics import confusion_matrix
 
 ```
 
-## 1) Data Collection
-###Data collection is the process of gathering and measuring information from the dataset.
+# 1) Data Collection
+### Data collection is the process of gathering and measuring information from the dataset.
 ```
 data=pd.read_csv("C:\\Users\\Pavan R Shetty\\Desktop\\Project\\Acute Liver Failure.csv")
 ```
-## 2) Data Analysis
+# 2) Data Analysis
+### In this process, the data in the dataset is analysed and useful informations are obtained which makes it easy for decision making.
 
 ### a) This displays the entire dataset.
 ```
@@ -201,14 +202,17 @@ data.head()
 ![](Internship/secondhead1.png)
 
 # 3) Data Visualization
+### This is a graphhical representaion of data which helps the users to understand the relationship between various attributes in the graph.
 
-## a) Bargraph to determine how many people have and do not have acute liver failure.
+### a) Bargraph to determine how many people have and do not have acute liver failure.
 ```
 sb.countplot(data['ALF'])
 ```
 ![](Internship/ALFNotthere.png)
 
-## b) Count of patients having acute liver failure and not having acute liver failure.
+It is clear that most of the people whose survey was taken had no acute liver failure.
+
+### b) Count of patients having acute liver failure and not having acute liver failure.
 ```
 data['ALF'].value_counts()
 0.0    4035
@@ -216,21 +220,23 @@ data['ALF'].value_counts()
 Name: ALF, dtype: int64
 ```
 
-## c) Bargraph to determine the gender of the patients
+### c) Bargraph to determine the gender of the patients
 ```
 sb.countplot(data['Gender'])
 ```
 
 ![](Internship/PlotGender.png)
 
-## d) Pairplot to show the relation between all the attributes.
+It is clear that slightly more males took part in the survey than females.
+
+### d) Pairplot to show the relation between all the attributes.
 ```
 sb.pairplot(data,hue='ALF',height=7,markers=['o','D'],diag_kind='kde',kind='reg')
 ```
 
 ![](Internship/Pairplot.png)
 
-## e) This displays the correlation between the attributes.
+### e) This displays the correlation between the attributes.
 ```
 data.corr()
 ```
@@ -238,7 +244,7 @@ data.corr()
 ![](Internship/corr.png)
 ![](Internship/corr1.png)
 
-## f) Heatmap to display the correlation.
+### f) Heatmap to display the correlation.
 ```
 plt.subplots(figsize=(20,20))
 x=sb.heatmap(data.corr(),annot=True,cmap='coolwarm')  #now it shows correlation between the attributes
@@ -247,3 +253,9 @@ plt.show()
 
 ![](Internship/Heatmap.png)
 The above heatmap shows the correlation between any 2 independent variables and variables with the target variable. Here, a. gender and height have coeff of 0.67 and are high +ve correlated. b. Weight and body mass index have coeff 0.86 and high +ve correlated. c. Weight and obesity have coeff of 0.66. d. Weight and waist have coeff of 0.87. weight, Body mass index waist and height are highly correlated to eachother e. Max B.P and hypertension have coeff of 0.63 Hence, I remove the columns: 1.Gender as less correlated to ALF than height 2.weight,BMI and Obesity because than thesse 3 Waist is more correlated to the target attribute 3.Max B.P as less correlated to ALF than hypertension.
+
+# 4) Data Cleaning
+### In this step, the inaccurate records or the records that are not required are corrected/removed. This helps in better modification of the dataset.
+
+
+

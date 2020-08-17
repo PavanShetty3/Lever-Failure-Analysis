@@ -53,6 +53,51 @@ data.tail()
 ### This shows the statistical information about the data
 data.describe()
 
+![](Internship/describe.png)
+![](Internship/describe1.png)
+
+### This gives the count of non empty rows of each column.This means there are some null values in the dataset. There are null values in many columns.
+data.info()
+
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 8785 entries, 0 to 8784
+Data columns (total 30 columns):
+Age                       8785 non-null int64
+Gender                    8785 non-null object
+Region                    8785 non-null object
+Weight                    8591 non-null float64
+Height                    8594 non-null float64
+Body Mass Index           8495 non-null float64
+Obesity                   8495 non-null float64
+Waist                     8471 non-null float64
+Maximum Blood Pressure    8481 non-null float64
+Minimum Blood Pressure    8409 non-null float64
+Good Cholesterol          8768 non-null float64
+Bad Cholesterol           8767 non-null float64
+Total Cholesterol         8769 non-null float64
+Dyslipidemia              8785 non-null int64
+PVD                       8785 non-null int64
+Physical Activity         8775 non-null float64
+Education                 8765 non-null float64
+Unmarried                 8333 non-null float64
+Income                    7624 non-null float64
+Source of Care            8785 non-null object
+PoorVision                8222 non-null float64
+Alcohol Consumption       8785 non-null int64
+HyperTension              8705 non-null float64
+Family  HyperTension      8785 non-null int64
+Diabetes                  8783 non-null float64
+Family Diabetes           8785 non-null int64
+Hepatitis                 8763 non-null float64
+Family Hepatitis          8779 non-null float64
+Chronic Fatigue           8750 non-null float64
+ALF                       6000 non-null float64
+dtypes: float64(21), int64(6), object(3)
+memory usage: 2.0+ MB
+
+### This shows if there are missing values in the dataframe.
+data.isnull()
+
 
 
 

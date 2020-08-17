@@ -276,4 +276,8 @@ Along with the above ones, Dyslipidemia is very less correlated to ALF
 data.drop('Dyslipidemia',axis=1,inplace=True)
 ```
 
-
+### b) This displays the shape of the dataset. This gives the number of rows and columns in the existing  dataset.
+```
+data.shape()
+```
+(4322, 22)

@@ -197,6 +197,9 @@ data.head()
 
 ```
 
-![](
+![](Internship/secondhead.png)
+![](Internship/secondhead1.png)
+
+# 3)
 
 

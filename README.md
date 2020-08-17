@@ -314,3 +314,11 @@ logregprediction=logreg.predict(x_test)
 logregprediction
 ```
 array([0., 0., 0., ..., 0., 0., 0.])
+
+### b) Compaarison between right and wrong values
+```
+conmat=confusion_matrix(y_test,logregprediction)
+conmat
+```
+array([[1013,   11],
+       [  42,   15]], dtype=int64)

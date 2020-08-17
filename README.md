@@ -200,6 +200,12 @@ data.head()
 ![](Internship/secondhead.png)
 ![](Internship/secondhead1.png)
 
-# 3)
+# 3) Data Visualization
+
+## a) To plot bargraph to determine how many people have and do not have acute liver failure.
+```
+sb.countplot(data['ALF'])
+```
+![](
 
 

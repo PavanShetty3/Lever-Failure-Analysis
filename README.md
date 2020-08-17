@@ -11,7 +11,6 @@ The steps done in this analysis are as follows:
 4) Data cleaning
 5) Algorithm selection
 6) Prediction
-7) Saving the model
 
 ### Importing libraries:
 ```
@@ -322,5 +321,3 @@ conmat
 ```
 array([[1013,   11],
        [  42,   15]], dtype=int64)
-
-# 7) Saving the Model

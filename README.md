@@ -34,5 +34,6 @@ data=pd.read_csv("C:\\Users\\Pavan R Shetty\\Desktop\\Project\\Acute Liver Failu
 
 ### This displays the entire dataset.
 data                    #This displays the entire dataset
+![](Internship/Data.png)
 ![](
 

@@ -32,8 +32,15 @@ data=pd.read_csv("C:\\Users\\Pavan R Shetty\\Desktop\\Project\\Acute Liver Failu
 ```
 ## 2) Data Analysis
 
-### This displays the entire dataset.
-data                    #This displays the entire dataset
+### a) This displays the entire dataset.
+data       
+
 ![](Internship/Data.png)
-![](
+![](Internship/Data1.png)
+
+### b) This displays the first 5 entries of the dataset.
+data.head()
+
+
+
 

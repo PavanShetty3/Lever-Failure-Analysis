@@ -1,37 +1,36 @@
-## Welcome to GitHub Pages
+# Acute Liver Failure Patients Analysis
+Acute livrt failure is loss of liver function that occurs rapidly, usually for a person who has no pre existing liver disease.The JPAC centre for Health Diagnosis and control has conducted nationwide surveys of Indian adults from 1990. The centre had collected wide variety of health information through different modes. This dataset has information of 8785 adults 20 years of age or older from 2008-2009 and 2014-205 surveys.
 
-You can use the [editor on GitHub](https://github.com/PavanShetty3/Project/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+The dataset has been downloaded from Kaggle website. The link is :
+https://www.kaggle.com/rahul121/acute-liver-failure
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+The steps done in this analysis are as follows:
+1) Data collectiom
+2) Data analysis
+3) Data visualization
+4) Data cleaning
+5) Algorithm selection
+6) Prediction
+7) Saving the model
 
-### Markdown
+### Important libraries:
+```
+import pandas as pd
+import seaborn as sb
+from matplotlib.pyplot import scatter as sm
+import matplotlib.pyplot as plt
+from sklearn.model_selection import train_test_split as tts
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import confusion_matrix
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### 1) Data Collection
+data=pd.read_csv("C:\\Users\\Pavan R Shetty\\Desktop\\Project\\Acute Liver Failure.csv")
 
-### Jekyll Themes
+### 2) Data Analysis
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/PavanShetty3/Project/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
-### Support or Contact
+data                    #This displays the entire dataset
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+

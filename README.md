@@ -322,3 +322,5 @@ conmat
 ```
 array([[1013,   11],
        [  42,   15]], dtype=int64)
+
+# 7) Saving the Model

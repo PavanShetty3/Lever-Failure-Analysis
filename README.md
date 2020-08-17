@@ -281,3 +281,36 @@ data.drop('Dyslipidemia',axis=1,inplace=True)
 data.shape()
 ```
 (4322, 22)
+
+# 5) Algorithm Selection
+As in this the target variable is 0 or 1, hence its a classification problem and LOGISTIC REGRESSION has to be used.
+### a) Creating arrays for the model
+```
+x=data.iloc[:,:-1].values #all rows and all columns except the target column
+y=data.iloc[:,-1].values #all rows and target column
+```
+
+### b) Splitting the dataset for training and testing
+```
+x_train,x_test,y_train,y_test=tts(x,y,test_size=0.25,random_state=92)
+```
+
+### c) Creating object for the model
+```
+logreg=LogisticRegression()  
+logreg.fit(x_train,y_train)
+loregaccuracy=logreg.score(x_test,y_test)
+loregaccuracy*100
+```
+95.09713228492137
+
+Therefore, the model can accurately predict if a person has Acute liver failure or not with 95% accuracy
+
+# 6) Prediction
+
+### a) Checking the predicted values
+```
+logregprediction=logreg.predict(x_test)
+logregprediction
+```
+array([0., 0., 0., ..., 0., 0., 0.])

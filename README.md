@@ -202,10 +202,25 @@ data.head()
 
 # 3) Data Visualization
 
-## a) To plot bargraph to determine how many people have and do not have acute liver failure.
+## a) Bargraph to determine how many people have and do not have acute liver failure.
 ```
 sb.countplot(data['ALF'])
 ```
+![](Internship/ALFNotthere.png)
+
+## b) Count of patients having acute liver failure and not having acute liver failure.
+```
+data['ALF'].value_counts()
+0.0    4035
+1.0     287
+Name: ALF, dtype: int64
+```
+
+## Bargraph to determine the gender of the patients
+```
+sb.countplot(data['Gender'])
+```
+
 ![](
 
 

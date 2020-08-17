@@ -41,6 +41,12 @@ data
 ### b) This displays the first 5 entries of the dataset.
 data.head()
 
+![](Internship/head.png)
+![](Internship/head1.png)
 
+### c) This displays the last 5 entries of the dataset.
+data.tail()
 
+![](Internship/tail.png)
+![](Internship/tail1.png)
 

@@ -246,3 +246,4 @@ plt.show()
 ```
 
 ![](Internship/Heatmap.png)
+The above heatmap shows the correlation between any 2 independent variables and variables with the target variable. Here, a. gender and height have coeff of 0.67 and are high +ve correlated. b. Weight and body mass index have coeff 0.86 and high +ve correlated. c. Weight and obesity have coeff of 0.66. d. Weight and waist have coeff of 0.87. weight, Body mass index waist and height are highly correlated to eachother e. Max B.P and hypertension have coeff of 0.63 Hence, I remove the columns: 1.Gender as less correlated to ALF than height 2.weight,BMI and Obesity because than thesse 3 Waist is more correlated to the target attribute 3.Max B.P as less correlated to ALF than hypertension.

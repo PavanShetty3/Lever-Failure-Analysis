@@ -238,3 +238,11 @@ data.corr()
 ![](Internship/corr.png)
 ![](Internship/corr1.png)
 
+## f) Heatmap to display the correlation.
+```
+plt.subplots(figsize=(20,20))
+x=sb.heatmap(data.corr(),annot=True,cmap='coolwarm')  #now it shows correlation between the attributes
+plt.show()
+```
+
+![](Internship/Heatmap.png)

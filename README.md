@@ -229,3 +229,12 @@ sb.pairplot(data,hue='ALF',height=7,markers=['o','D'],diag_kind='kde',kind='reg'
 ```
 
 ![](Internship/Pairplot.png)
+
+## e) This displays the correlation between the attributes.
+```
+data.corr()
+```
+
+![](Internship/corr.png)
+![](Internship/corr1.png)
+

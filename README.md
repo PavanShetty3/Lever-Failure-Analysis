@@ -50,3 +50,10 @@ data.tail()
 ![](Internship/tail.png)
 ![](Internship/tail1.png)
 
+### This shows the statistical information about the data
+data.describe()
+
+
+
+
+

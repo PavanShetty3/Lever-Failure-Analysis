@@ -150,6 +150,53 @@ ALF                        True
 dtype: bool
 ```
 
+### h) This gives the count of the null values in each column .Max number of null values is in the target variable column which is ALF.
+```
+data.isnull().sum()
 
+Age                          0
+Gender                       0
+Region                       0
+Weight                     194
+Height                     191
+Body Mass Index            290
+Obesity                    290
+Waist                      314
+Maximum Blood Pressure     304
+Minimum Blood Pressure     376
+Good Cholesterol            17
+Bad Cholesterol             18
+Total Cholesterol           16
+Dyslipidemia                 0
+PVD                          0
+Physical Activity           10
+Education                   20
+Unmarried                  452
+Income                    1161
+Source of Care               0
+PoorVision                 563
+Alcohol Consumption          0
+HyperTension                80
+Family  HyperTension         0
+Diabetes                     2
+Family Diabetes              0
+Hepatitis                   22
+Family Hepatitis             6
+Chronic Fatigue             35
+ALF                       2785
+dtype: int64
+
+```
+
+### i) Replacing M with 0 and F with 1.
+```
+
+classes={'M':0,'F':1}
+data.replace(classes,inplace=True)
+data.head()
+
+```
+
+![](
 
 

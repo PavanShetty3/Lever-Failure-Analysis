@@ -216,11 +216,16 @@ data['ALF'].value_counts()
 Name: ALF, dtype: int64
 ```
 
-## Bargraph to determine the gender of the patients
+## c) Bargraph to determine the gender of the patients
 ```
 sb.countplot(data['Gender'])
 ```
 
+![](Internship/PlotGender.png)
+
+## d) Pairplot to show the relation between all the attributes.
+```
+sb.pairplot(data,hue='ALF',height=7,markers=['o','D'],diag_kind='kde',kind='reg')
+```
+
 ![](
-
-

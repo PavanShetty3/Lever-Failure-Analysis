@@ -228,4 +228,4 @@ sb.countplot(data['Gender'])
 sb.pairplot(data,hue='ALF',height=7,markers=['o','D'],diag_kind='kde',kind='reg')
 ```
 
-![](
+![](Internship/Pairplot.png)

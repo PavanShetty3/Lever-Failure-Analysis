@@ -30,7 +30,7 @@ from sklearn.metrics import confusion_matrix
 data=pd.read_csv("C:\\Users\\Pavan R Shetty\\Desktop\\Project\\Acute Liver Failure.csv")
 ```
 # 2) Data Analysis
-### In this process, the data in the dataset is analysed and useful informations are obtained which makes it easy for decision making.
+### In this process, the data in the dataset is analyzed and useful information are obtained which makes it easy for decision making.
 
 ### a) This displays the entire dataset.
 ```
@@ -201,7 +201,7 @@ data.head()
 ![](Internship/secondhead1.png)
 
 # 3) Data Visualization
-### This is a graphhical representaion of data which helps the users to understand the relationship between various attributes in the graph.
+### This is a graphical representation of data which helps the users to understand the relationship between various attributes in the graph.
 
 ### a) Bargraph to determine how many people have and do not have acute liver failure.
 ```

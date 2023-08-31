@@ -5,7 +5,7 @@ The dataset has been downloaded from Kaggle website. The link is :
 https://www.kaggle.com/rahul121/acute-liver-failure
 
 The steps done in this analysis are as follows:
-1) Data collectiom
+1) Data collection
 2) Data analysis
 3) Data visualization
 4) Data cleaning
